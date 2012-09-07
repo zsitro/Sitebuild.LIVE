@@ -1,0 +1,22 @@
+
+/* ==================== */
+/* = Smallest screens = */
+/* ==================== */
+
+
+	.applicationBox .control-group{
+		width: 95% !important;
+		border:0px solid red !important;
+	}
+
+	.applicationBox input {
+		width: 95% !important;
+	}
+
+	.applicationBox input[type="checkbox"] {
+	 	width: auto !important;
+	}	
+
+	#recaptcha_image img{
+		width:96% !important;
+	}

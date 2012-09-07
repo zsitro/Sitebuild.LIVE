@@ -1,0 +1,193 @@
+@white		: #fff;
+@red  		: #f00;
+
+@colorText       	: #000;
+@colorLink       	: #00f;
+@colorDarkBlue   	: #04253A;
+@colorMidBlue    	: #5F7589;
+@colorLightBlue  	: #96C8FF;
+@colorLighterBlue	: #6995B7;
+
+@fontface	: Helvetica, arial, freesans, clean, sans-serif;
+
+@padding1	: 10px; 
+@padding2	: 20px; 
+
+
+/* ================== */
+/* = LESS Shortcuts = */
+/* ================== */
+
+
+.size(@fontsize){
+	font-size:@fontsize;
+}
+
+.bold(@weight: bold){
+	font-weight:@weight;
+}
+
+/* debug border */
+.db(@color: blue){
+	border:0px solid @color;
+}
+
+.removeLinkOutline{
+    outline: none;
+}
+
+.removeMargin{
+	margin:0;
+}
+
+.removePadding{
+	padding:0;
+}
+
+.removeMP{
+	padding:0;margin:0;
+}
+
+.roundedCorners (@radius: 5px) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	behavior: url(styles/PIE.php);
+	position:relative;
+}
+
+.transitionAll(@duration: 1500ms){
+	-webkit-transition: all @duration ease;
+	-moz-transition: all @duration ease;
+	-o-transition: all @duration ease;
+	transition: all @duration ease;
+}
+
+.transitionWidth(@duration: 1500ms){
+	-webkit-transition: width @duration ease;
+	-moz-transition: width @duration ease;
+	-o-transition: width @duration ease;
+	transition: width @duration ease;
+}
+
+.transitionHeight(@duration: 1500ms){
+	-webkit-transition: height @duration ease;
+	-moz-transition: height @duration ease;
+	-o-transition: height @duration ease;
+	transition: height @duration ease;
+}
+
+.transitionMarginLeft(@duration: 1500ms){
+	-webkit-transition: margin-left @duration ease;
+	-moz-transition: margin-left @duration ease;
+	-o-transition: margin-left @duration ease;
+	transition: margin-left @duration ease;
+}
+
+
+.boxShadow (@inner,@outter){
+	box-shadow: inset 0px 0px 15px @colorLightBlue, 0px 0px 25px #000;
+}
+ 
+
+.PNGbackground{
+	background-repeat: repeat;
+	background-position: top left;
+	background-color: transparent;
+}
+
+.bi(@pictureURL: ''){
+	background-image:url("@{pictureURL}");
+}
+
+.singleCenterBackground{
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+
+.singleTopBackground{
+	background-repeat: no-repeat;
+	background-position: top center;	
+}
+
+.translucentBlue70 {
+	.PNGbackground;
+	background-image: url('../images/assets/translucent-blue-70.png');	
+}
+
+.ie6 .translucentBlue70{
+	background-image : none;
+	background-color:#051E30;
+}
+
+.translucentBlack70 {
+	.PNGbackground;
+	background-image: url('../images/assets/translucent-black-70.png');
+	/*background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwMi8yOS8xMnmfus4AAAAedEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzUuMasfSOsAAAAsSURBVEiJ7c0xAQAACAOgaf82FrSCnw8UoJJMHvRHKhaLxWKxWCwWi8XimwWflQDvrrIDQgAAAABJRU5ErkJggg==');*/
+}
+
+.translucentBlack80 {
+	.PNGbackground;
+	background-image: url('../images/assets/translucent-black-80.png');
+	/*background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwMi8yOS8xMnmfus4AAAAedEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzUuMasfSOsAAAAsSURBVEiJ7c0xAQAACAOgaf9ohrKCnw8UoJJMHvRHKhaLxWKxWCwWi8XimwUBzQEI1vAt8gAAAABJRU5ErkJggg==');*/
+}
+
+.translucentBlack90 {
+	.PNGbackground;
+	background-image: url('../images/assets/translucent-black-90.png');
+	/*background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwMi8yOS8xMnmfus4AAAAedEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzUuMasfSOsAAAAsSURBVEiJ7c0xAQAACAOgaf+c5rCCnw8UoJJMHvRHKhaLxWKxWCwWi8XimwVyIAEiKajv0wAAAABJRU5ErkJggg==');*/
+}
+
+.inlineBlock{
+	display:inline-block;
+	display:inline !ie;
+    zoom:1 !ie;
+}
+
+
+/* ========================= */
+/* = End of LESS Shortcuts = */
+/* ========================= */
+
+
+/* ========================= */
+/* = Firm Contest contents = */
+/* ========================= */
+
+body{
+	font-family:@fontface;	
+	color:@colorText;
+	text-transform:uppercase;
+}
+
+/**{border:1px solid red;}*/
+
+a{
+	color:@colorLink;
+	text-decoration:none;
+}
+
+
+.hide {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+.buttonBehaviour{
+	cursor:pointer;
+	-webkit-transition-duration: .4s;	  
+	-moz-transition-duration: .4s;   	  
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);	
+}
+.buttonBehaviour:hover{
+	-webkit-transition-duration: .4s;
+	-moz-transition-duration: .4s;
+	-moz-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+}
+

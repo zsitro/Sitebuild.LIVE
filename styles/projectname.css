@@ -1,0 +1,83 @@
+.removeLinkOutline { outline:none; }
+.removeMargin { margin:0; }
+.removePadding { padding:0; }
+.removeMP {
+  padding:0;
+  margin:0;
+}
+.PNGbackground {
+  background-repeat:repeat;
+  background-position:top left;
+  background-color:transparent;
+}
+.singleCenterBackground {
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+.singleTopBackground {
+  background-repeat:no-repeat;
+  background-position:top center;
+}
+.translucentBlue70 {
+  background-repeat:repeat;
+  background-position:top left;
+  background-color:transparent;
+  background-image:url('../images/assets/translucent-blue-70.png');
+}
+.ie6 .translucentBlue70 {
+  background-image:none;
+  background-color:#051e30;
+}
+.translucentBlack70 {
+  background-repeat:repeat;
+  background-position:top left;
+  background-color:transparent;
+  background-image:url('../images/assets/translucent-black-70.png');
+}
+.translucentBlack80 {
+  background-repeat:repeat;
+  background-position:top left;
+  background-color:transparent;
+  background-image:url('../images/assets/translucent-black-80.png');
+}
+.translucentBlack90 {
+  background-repeat:repeat;
+  background-position:top left;
+  background-color:transparent;
+  background-image:url('../images/assets/translucent-black-90.png');
+}
+.inlineBlock {
+  display:inline-block;
+  display:inline !ie;
+  zoom:1 !ie;
+}
+body {
+  font-family:Helvetica, arial, freesans, clean, sans-serif;
+  color:#000000;
+  text-transform:uppercase;
+}
+a {
+  color:#0000ff;
+  text-decoration:none;
+}
+.hide {
+  position:absolute !important;
+  height:1px;
+  width:1px;
+  overflow:hidden;
+  clip:rect(1px 1px 1px 1px);
+  clip:rect(1px,1px,1px,1px);
+}
+.buttonBehaviour {
+  cursor:pointer;
+  -webkit-transition-duration:.4s;
+  -moz-transition-duration:.4s;
+  -moz-transform:scale(1);
+  -webkit-transform:scale(1);
+}
+.buttonBehaviour:hover {
+  -webkit-transition-duration:.4s;
+  -moz-transition-duration:.4s;
+  -moz-transform:scale(1.15);
+  -webkit-transform:scale(1.15);
+}
