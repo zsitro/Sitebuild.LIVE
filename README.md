@@ -40,3 +40,5 @@ Idiot-proof PHP framework to ease multipage sitebuilding process
 	<a class="<?php addActiveClass('contact') ?> inline contact" href="?page=contact">Contact</a>
 </nav>
 ```
+
+See it in action: [http://www.levizadori.com/?page=works](http://www.levizadori.com/?page=works)
