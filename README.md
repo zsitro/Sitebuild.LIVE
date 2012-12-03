@@ -30,3 +30,13 @@ Idiot-proof PHP framework to ease multipage sitebuilding process
 
 <?php getFooter() ?>
 ```
+
+
+###Sample menu with addActiveClass helper
+```html
+<nav class="mainmenu">
+	<a class="<?php addActiveClass('') ?> inline home current" href="?page=">Home</a>
+	<a class="<?php addActiveClass('works') ?> inline works" href="?page=works">Work</a>
+	<a class="<?php addActiveClass('contact') ?> inline contact" href="?page=contact">Contact</a>
+</nav>
+```
